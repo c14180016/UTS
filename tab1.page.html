@@ -1,0 +1,80 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Page 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Page 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div style="text-align:center;padding-top:20px">
+    UTS Mobile WEB<br/><br/>
+    Andreas Kevin Christovian<br/><br/>
+    C14180016<br/><br/>
+    Page 1 Input Data<br/><br/>
+    Page 2 Upload Foto<br/><br/>
+    Page 3 List Foto<br/><br/>
+    <!-- C14180016@john.petra.ac.id <br/><br/>
+    081232817655 -->
+  </div>
+
+  <div id="container" style="padding-top:20px;padding-left: 200px;">
+    <form>
+      <label for="Judul">Judul : </label>
+      <input type="text" id="Judul" name="Judul" [(ngModel)]="Judul"><br><br>
+
+      <label for="Tanggal" >Tanggal :</label>
+      <input type="date" id="tanggal" name="tanggal" [(ngModel)]="Tanggal">   <br><br> 
+
+      <label for="Note">Note: </label>              
+      <input type="text" id="Note" name="Note" [(ngModel)]="Note"><br><br>
+
+      <label for="Note">Nilai Notes: </label>
+      <input type="text" id="Nilai_Notes" name="Nilai_Notes" [(ngModel)]="Nilai_Notes"><br><br>          
+
+      <ion-button (click)="Button_Submit()">Submit</ion-button>
+      
+      <ion-button (click)="Button_Upload()">Upload</ion-button>
+      
+    </form>
+  </div>
+
+  <div id ="container"  style="padding-top:20px;padding-left: 200px;">      
+        
+    Judul =
+    {{Data_Judul}}
+    <br>
+    Notes = 
+    {{Data_Note}}
+    <br>
+    Tanggal =
+    {{Data_Tanggal}}
+    <br>
+    Nilai Note = 
+    {{Data_Nilai}}
+    <br>
+  </div>
+
+  <div id ="container"  style="padding-top:20px;padding-left: 200px;">      
+        CEK tampil database<br><br>
+    Judul =
+    {{int_Judul}}
+    <br>
+    Notes = 
+    {{int_Note}}
+    <br>
+    Tanggal =
+    {{int_Tanggal}}
+    <br>
+    Nilai Note = 
+    {{int_Nilai}}
+    <br>
+  </div>
+  
+
+</ion-content>
